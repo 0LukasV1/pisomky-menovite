@@ -5,7 +5,7 @@ def pismenko(text):
         x = ord(text[i])
         if a >= x:
             print(i,end=", ")
-            print(+4,end=", ")
+            print(x+4,end=", ")
             print(text[i],end=", ")
             print()
         else:
