@@ -29,3 +29,19 @@ print(hodnoty)
 
 for i in hodnoty:
     print(i, hodnoty[1],(hodnoty[i]/pp)+100)
+    
+    
+    
+    import random
+monsters= []
+
+def create_monster():
+    temp=[]
+    for i in range(5):
+        temp.append(random.randint(0,10))
+    return temp
+
+def iq_test(monster:list)->int:
+    return monster.count(1)
+
+def sex(monster1,monster2):
