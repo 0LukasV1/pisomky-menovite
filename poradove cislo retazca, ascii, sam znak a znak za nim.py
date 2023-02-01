@@ -11,3 +11,21 @@ def pismenko(text):
 
 
 pismenko("DneSkA PisEmE pisoMku")
+
+
+
+
+import random
+pp = 100
+
+hodnoty={}
+for i in range(pp):
+    ciki = random.randrange(1,101)
+    miki = random.randrange(1,101)
+    vysledok = ciki**miki
+    cifra = int(str(vysledok)[0])
+    hodnoty[cifra] = hodnoty.get(cifra,0)+1
+print(hodnoty)
+
+for i in hodnoty:
+    print(i, hodnoty[1],(hodnoty[i]/pp)+100)
